@@ -65,12 +65,23 @@
             top: 50%;
             left: 50%;
         }
+        /* Twinkle animation for special characters in ASCII art */
+.twinkle {
+    display: inline;
+    animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
     </style>
 </head>
 <body>
     <div class="canvas-container">
         <div class="ascii-layer position-center" data-layer-id="1" data-parallax="0.3" data-offset-x="0" data-offset-y="0" data-scale="1" style="z-index: 2; font-size: 12px;">
-<pre style="color: #000000;">                                                                                        ▒▒▒▒▒▒▒▒▒▒▒                                                                                              
+<pre style="color: #000000;">
+                                                                                        ▒▒▒▒▒▒▒▒▒▒▒                                                                                              
                                                                                    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                                                                                          
                                                                                  ▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒                                                                                       
                                                                                ▒▒▒▒▒▓▓▓█████████████▓▓▓▒▒▒▒▒                                                                                     
@@ -88,7 +99,7 @@
                                                                   ●▒▒▓█▓▓▒▒─░─▒─▒─●─▓    ░░░░   ░░░                    ▒                                                                         
                                                                   │▒▒▓█▓▒▒│╱▒▒▒▒▒╲│╱    ░░░░░░ ░░░░░                                                                                             
                                                                   ▒▒▒▓█▓▒▒│░╱▒▒▒╲▒│▓   ░░░░░░░░░░░░░░                   ▒                                                                        
-                                                                  ▒▒▓█▓★▒░│▒▒╱▒╲▒▒│    ░░░░░░░▒▒▒░░░░                                                                               
+                                                                  ▒▒▓█▓<span class="twinkle">★</span>▒░│▒▒╱▒╲▒▒│    ░░░░░░░▒▒▒░░░░                                                                               
                                                                   ▒▒▓█▓▒▒─░─▒─◆─▒─▒    ░░░░░▒▒▒▒▓░░░░                                                                                            
                                                                   ▒▒▓█▓▒▒░░▒▒╲│╱▓▓▓    ░░░░▓▒██▓▓▓░░░                                                                                            
                                                                   ▒▒▓█▓▒▒░░▒╲▒│▒╱▓▓    ░░▒▒▓███▓▓▓▒░░                                                                                            
@@ -99,7 +110,7 @@
                                                                   ▒▒▓█▓▒▒░│▒▒╱▒╲▓▒│       ▒▓▓█▓█▒▓                                                                                               
                                                                   ▒▒▓█▓▒▒─░─▒─○─▒─▓        ▒▒▓▒▓▓░                                                                                               
                                                                   ▒▒▓█▓▒▒▒░░▒╲│╱▒▒▓▒        ░▒▒░░                       ▒                                                                        
-                                                                   ▒▒▓█▓☆▒░░╲▒│▒╱▒▓▓         ░░░                                                                                                 
+                                                                   ▒▒▓█▓<span class="twinkle">☆</span>▒░░╲▒│▒╱▒▓▓         ░░░                                                                                                 
                                                                    ▒▒▓█▓▒▒▒╲░▒│▒▒╱▒╲▓                                  ▒                                                                         
                                                                     ▒▒▓█▓▒▒─░─▒─▒─●─▓                                  ▒                                                                         
                                                                     ▒▒▓██▓▒▒░░░▒▒╲│╱▒▒▓                              ▒▒                                                                          
@@ -118,7 +129,7 @@
                                                                                         ▒▒▒▒▒▒▒▒▒▒                                                                                               
                                                                                                                                                                                                  
                                                                                                                                                                                                  
-                                                                                ·  月の光は愛のメッセージ  ·
+                                                                                 <span class="twinkle">·</span>  月の光は愛のメッセージ  <span class="twinkle">·</span>
     </pre>
         </div>
         <div class="ascii-layer position-top-left" data-layer-id="2" data-parallax="0.4" data-offset-x="-30" data-offset-y="-20" data-scale="0.7" style="z-index: 3; font-size: 17px;">
